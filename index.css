@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    background-image: url('9cop2.jpg');
+    background-size:cover;
+}
+h1{
+    font-size: 2em;
+}
+
+.gradient {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #b5caf9, 50%, #aad186);
+    /*box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;*/
+    background-color: #b5caf9;
+    padding: 1.5em;
+    border: 20px solid white;
+    border-radius: 10px;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+}
+#split2{
+    opacity: 0;
+}
+.box{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+input {
+    cursor: pointer;
+    margin: 10px;
+}
+label {
+    margin-right: 10px;
+    width:120px;
+}
+input[type=color] {
+    -webkit-appearance: none;
+    border-radius: 7px;
+    border: 2px solid white; 
+    height: 25px;
+    width: 120px;
+}
+input[type=color]::-webkit-color-swatch-wrapper {
+    padding:0;
+}
+input[type=color]::-webkit-color-swatch{
+    border: none;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 2px;
+}
+input[type='range']::-webkit-slider-thumb {
+   
+    -webkit-appearance: none;
+    height: 20px;
+    width: 5px;
+    background: white;
+    border: 1px solid rgb(133, 121, 121);
+    border-radius: 5px;
+  }
+.someBtn{
+    width: 80%;
+    margin-top: 1em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-style: normal;
+  
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+   
+    cursor: pointer;
+    color: white;
+}
+button:hover {
+    font-weight: 700;
+}

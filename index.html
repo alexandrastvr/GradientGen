@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="gradient" class="gradient">
+            <h1>Gradient Generator</h1>
+            <div class="colors" id="colors">
+                <div class="box">
+                        <label for="picker-1">Color 1:</label>
+                        <input id="picker-1" type="color" name="color1" value="#b5caf9"/>
+        
+                        <input value=50 type="range" id="split1" name="split" min="0" max="100"> 
+                </div>
+                <div class="box">
+                        <label for="picker-2">Color 2:</label>
+                        <input id="picker-2" type="color" name="color2" value="#aad186"/>
+                    
+                        <input value=50 type="range" id="split2" name="split" min="0" max="100"> 
+                </div>
+            </div>
+            <div class="someBtn" id="buttons">
+                <button id="addBtn" class="addBtn">Add Color</button>
+                <button id="surpriseBtn" class="surpriseBtn">Surprise me!</button>
+            </div>
+           
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
